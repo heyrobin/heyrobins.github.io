@@ -73,6 +73,15 @@ h6{font-size: 16px;}
     margin: 0 auto;
 }
 
+/* creating the width of container */
+.greeting-wrapper{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border: 2px dashed lightcoral;
+    min-height: 10em;
+}
+
 /* responsivenes dynamic movement on the browser and device sizes */
 @media screen and (max-width: 1200px) {
     .main-container{
