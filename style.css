@@ -20,6 +20,7 @@ html,body{
 h1,h2,h3,h4,h5,strong{
     color:var(--maintext);
     font-family: 'Russo One', sans-serif; /* applying font from the google */
+    font-weight: 500; /* changing boldness border of the font */
 
 }
 p, li, span, label, input, textarea{
@@ -72,7 +73,7 @@ h6{font-size: 16px;}
     margin: 0 auto;
 }
 
-/* dynamic movement on the browser and device sizes */
+/* responsivenes dynamic movement on the browser and device sizes */
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
