@@ -15,5 +15,9 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+UPDATED 5th JUNE 2021
 
 - 🔭 I’m currently working on New Website
+- 📫 Email: 𝑯𝒆𝒚𝑹𝒐𝒃𝒊𝒏𝑺𝒊𝒏𝒈𝒉@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎
+- 💬 CV Download: 𝙝𝙩𝙩𝙥𝙨://𝙗𝙞𝙩.𝙡𝙮/3𝙯5𝙘6𝙭𝙭
+
