@@ -17,5 +17,6 @@ Here are some ideas to get you started:
 
 
 - 🔭 I’m currently working on New Website
-- 📫 Email: HeyRobinSingh@gmail.com
-- 💬 CV Download https://bit.ly/3z5c6xx
+- 📫 Email: 𝑯𝒆𝒚𝑹𝒐𝒃𝒊𝒏𝑺𝒊𝒏𝒈𝒉@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎
+- 💬 CV Download <a href="/bit.ly/3z5c6xx" download>
+
