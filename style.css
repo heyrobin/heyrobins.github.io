@@ -161,7 +161,9 @@ h6{font-size: 16px;}
 }
 
 .left-column{
-    grid-area:left-column;
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
     /* border: 1px dashed lightcoral */
 }
 
@@ -216,6 +218,12 @@ h6{font-size: 16px;}
 
 #purple-mode{
     background-color: #7E4C74;
+}
+
+#sttings-note{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
 }
 
 .right-column{
