@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link id="theme-style"  rel="stylesheet" type="text/css" href="">
 </head>
 
 <body>
@@ -43,10 +45,10 @@
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="Classic" id="Classic-mode" class="theme-dot"></div>
+                        <div data-mode="Night" id="Night-mode" class="theme-dot"></div>
+                        <div data-mode="Earth" id="Earth-mode" class="theme-dot"></div>
+                        <div data-mode="Galaxy" id="Galaxy-mode" class="theme-dot"></div>
                     </div>
                     <p id="setting-note">Theme settings will be saved for<br>your next visit</p>
 
@@ -163,6 +165,8 @@
 			</div>
 		</div>
 	</section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 
 

@@ -123,6 +123,10 @@ h6{font-size: 16px;}
     background-color: var(--maincolor);
 }
 
+#navigation a{
+    color:var(--maintext);
+}
+
 #navigation{
     margin: 0;
     padding: 10px;
@@ -210,19 +214,19 @@ h6{font-size: 16px;}
     border-width: 5px;
 }
 
-#light-mode{
+#Classic-mode{
     background-color: #fff;
 }
 
-#blue-mode{
+#Night-mode{
     background-color: #192734;
 }
 
-#green-mode{
+#Earth-mode{
     background-color: #78866b;
 }
 
-#purple-mode{
+#Galaxy-mode{
     background-color: #7E4C74;
 }
 
