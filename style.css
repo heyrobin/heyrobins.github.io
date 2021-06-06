@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5,strong{
 
 }
 p, li, span, label, input, textarea{
-    color: var(--maintext);
+    color: var(--secondaryText);
     font-family: 'Roboto Mono', monospace; /* applying font from the google */
 }
 
