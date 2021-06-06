@@ -288,6 +288,11 @@ h6{font-size: 16px;}
     bottom: -5px;
     right: -5px;
 }
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+}
 /* responsivenes dynamic movement on the browser and device sizes */
 @media screen and (max-width: 1200px) {
     .main-container{
