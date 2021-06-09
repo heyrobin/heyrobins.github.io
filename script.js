@@ -1,5 +1,16 @@
 console.log("ITS working")
 
+
+let theme = localStorage.getItem('theme')
+
+if(theme == null){
+    setTheme('Classic')
+}else{
+    setTheme(theme)
+}
+
+
+
 let themeDots = document.getElementsByClassName('theme-dot')
 
 for (var i=0; themeDots.length > i; i++){
@@ -23,4 +34,6 @@ function setTheme(mode){
     if(mode == 'Galaxy'){
         document.getElementById('theme-style').href = 'galaxy.css'
     }
-}
+
+    localStorage.setItem('theme', mode)
+}  
