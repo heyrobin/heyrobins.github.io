@@ -344,6 +344,15 @@ h6{font-size: 16px;}
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
+
+/* broken site gif */
+.broken-site{
+    align-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
 .thumbnail{
 	display: block;
 	width: 100%;
