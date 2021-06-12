@@ -4,7 +4,7 @@
     --maincolor:#46344E;
     --secondarycolor:#382a3f;
 
-    --bordercolor:#1d1520;
+    --bordercolor:#412549;
 
     --maintext:#fff;
     --secondaryText:#eeeeee;
@@ -38,4 +38,18 @@
 
 .s2{
     background-color: var(--previewBg);
+}
+
+.post-preview{
+	background-color: #121212; 
+	    
+}
+
+.post-title{
+	color:rgb(255, 255, 255);
+    
+}
+
+.post-intro{
+	color:#b1b1b1;
 }

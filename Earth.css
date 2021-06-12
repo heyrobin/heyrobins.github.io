@@ -16,3 +16,38 @@
 
   
 }
+
+.s1{
+    background-image: url('images/green.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.intro-wrapper{
+    background-color: var(--previewBg);
+    
+}
+
+.nav-wrapper{
+    background-color: var(--previewBg);
+    
+}
+
+.s2{
+    background-color: var(--previewBg);
+}
+
+.post-preview{
+	background-color: #121212; 
+	    
+}
+
+.post-title{
+	color:rgb(255, 255, 255);
+    
+}
+
+.post-intro{
+	color:#b1b1b1;
+}
