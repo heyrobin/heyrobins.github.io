@@ -18,3 +18,24 @@
 
   
 }
+
+.s1{
+    background-image: url('images/Space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.intro-wrapper{
+    background-color: var(--previewBg);
+    
+}
+
+.nav-wrapper{
+    background-color: var(--previewBg);
+    
+}
+
+.s2{
+    background-color: var(--previewBg);
+}
