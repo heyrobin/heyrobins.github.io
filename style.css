@@ -337,6 +337,9 @@ h6{font-size: 16px;}
     width: 100%;
 }
 
+social_img {
+    width: 100%;
+}
 
 .post-wrapper{
 	display: grid;
@@ -465,7 +468,7 @@ h6{font-size: 16px;}
     
 	width: 20px;
 	height: 20px;
-	    margin-right: 5px;
+    margin-right: 5px;
     
 }
 
