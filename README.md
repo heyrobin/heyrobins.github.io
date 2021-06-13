@@ -28,4 +28,6 @@ UPCOMING UPDATES:
 
 -favicon
 -projects page
+-technology filter
+-technology tags below cards
 
