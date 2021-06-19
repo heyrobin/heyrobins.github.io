@@ -64,7 +64,16 @@ body{
     width: 120rem;
     max-width: 100rem;
     background: black;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .line-4 hr {
+    max-width: 40rem;
+        
+    }
+    
+}
+
 .text-container{
     
     font-size: 2rem;
