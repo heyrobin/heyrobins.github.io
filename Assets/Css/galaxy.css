@@ -1,24 +1,26 @@
-:root{
-    --maincolor:#15202B;
-    --secondarycolor:#192734;
 
-    --bordercolor:#164D56;
+
+:root{
+    --maincolor:#46344E;
+    --secondarycolor:#382a3f;
+
+    --bordercolor:#412549;
 
     --maintext:#fff;
     --secondaryText:#eeeeee;
 
     --themeDotBorder:#FFF;
 
-    --previewBg:rgb(25, 39, 52, 0.8);
-    --previewShadow:#111921;
+    --previewBg:rgb(29, 21, 32, 0.8);
+    --previewShadow:#2b202f;
 
-    --buttonColor:#17a2b8;
+    --buttonColor:#8534a3;
 
   
 }
 
 .s1{
-    background-image: url('images/blue.jpg');
+    background-image: url('assets/images/Space.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     

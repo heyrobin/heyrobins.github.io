@@ -23,16 +23,16 @@ for (var i=0; themeDots.length > i; i++){
 
 function setTheme(mode){
     if(mode == 'Classic'){
-        document.getElementById('theme-style').href = 'style.css'
+        document.getElementById('theme-style').href = 'assets/css/style.css'
     }
     if(mode == 'Night'){
-        document.getElementById('theme-style').href = 'night.css'
+        document.getElementById('theme-style').href = 'assets/css/night.css'
     }
     if(mode == 'Earth'){
-        document.getElementById('theme-style').href = 'Earth.css'
+        document.getElementById('theme-style').href = 'assets/css/Earth.css'
     }
     if(mode == 'Galaxy'){
-        document.getElementById('theme-style').href = 'galaxy.css'
+        document.getElementById('theme-style').href = 'assets/css/galaxy.css'
     }
 
     localStorage.setItem('theme', mode)
