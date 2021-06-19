@@ -512,10 +512,10 @@ social_img {
   to{border-right-color: transparent;}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .line-1{
-        width: 2em;
-        font-size: 2rem;
+        width: 1.9em;
+        font-size: 1.9rem;
     }
     
 }
