@@ -69,6 +69,7 @@ body{
 @media only screen and (max-width: 600px) {
     .line-4 hr {
     max-width: 40rem;
+    margin: 0 auto;
         
     }
     
@@ -92,8 +93,8 @@ body{
 
 @media only screen and (max-width: 600px) {
     .power{
-    max-width: 50rem;
-    max-height: 50rem;
+    max-width: 40rem;
+    max-height: 40rem;
         
     }
     
@@ -118,7 +119,7 @@ h2,h3{
 
 @media only screen and (max-width: 600px) {
     #img{
-    max-width: 50rem;
+    max-width: 40rem;
     max-height: 50rem;
         
     }
