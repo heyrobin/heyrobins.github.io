@@ -510,10 +510,9 @@ social_img {
   to{border-right-color: transparent;}
 }
 
-@media screen and (max-width: 20px) {
-    #typing{
-        width: 10%;
-        font-size: 10px;
+@media screen and (max-width: 320px) {
+    .line-1 anim-typewriter{
+        font-size: 2%;
     }
     
 }
