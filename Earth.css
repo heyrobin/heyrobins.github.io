@@ -1,24 +1,24 @@
 :root{
-    --maincolor:#15202B;
-    --secondarycolor:#192734;
+    --maincolor:#606B56;
+    --secondarycolor:#515a48;
 
-    --bordercolor:#164D56;
+    --bordercolor:#161914;
 
     --maintext:#fff;
     --secondaryText:#eeeeee;
 
     --themeDotBorder:#FFF;
 
-    --previewBg:rgb(25, 39, 52, 0.8);
-    --previewShadow:#111921;
+    --previewBg:rgb(81, 90, 72, 0.8);
+    --previewShadow:#2a2f25;
 
-    --buttonColor:#17a2b8;
+    --buttonColor:#669966;
 
   
 }
 
 .s1{
-    background-image: url('../../assets/images/blue.jpg');
+    background-image: url('assets/images/green.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     
