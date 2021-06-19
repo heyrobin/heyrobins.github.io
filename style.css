@@ -475,20 +475,14 @@ social_img {
 
 
 
-########################## Typewriter ###################################
+/* ########################## Typewriter ################################### */
 
 /* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
 
-body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(255,255,255,.75);
-  font-family: 'Anonymous Pro', monospace;  
-  background-color: rgb(25,25,25);  
-}
+
 .line-1{
     position: relative;
     top: 50%;  
@@ -514,4 +508,12 @@ body{
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
+}
+
+@media screen and (max-width: 20px) {
+    #typing{
+        width: 10%;
+        font-size: 10px;
+    }
+    
 }
