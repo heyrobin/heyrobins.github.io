@@ -81,6 +81,15 @@ body{
     margin-bottom: 6rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .power{
+    max-width: 50rem;
+    max-height: 50rem;
+        
+    }
+    
+}
+
 #img{
     display: block;
     margin: 0 auto;
@@ -96,5 +105,14 @@ h2,h3{
     margin: 0 auto;
     margin-top:6rem;
     margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #img{
+    max-width: 50rem;
+    max-height: 50rem;
+        
+    }
+    
 }
 
