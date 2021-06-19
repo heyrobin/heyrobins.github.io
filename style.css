@@ -500,22 +500,23 @@ social_img {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 2s steps(20) 1s 1 normal both,
+  animation: typewriter 1s steps(25) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 12em;}
+  to{width: 8.5em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .line-1{
         width: 1.8em;
         font-size: 1.9rem;
+        
     }
     
 }
