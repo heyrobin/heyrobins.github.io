@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans:wght@700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -38,7 +39,7 @@ body{
 }
 
 .covid-dek{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -124,5 +125,18 @@ h2,h3{
         
     }
     
+}
+
+.footer{
+    background-color: #ecd7b8;
+    height: 3rem;
+    
+}
+
+.footer-bottom{
+    margin-top:6rem;
+    align-content: center;
+    text-align: center;
+    font-size: 1.6rem;
 }
 
