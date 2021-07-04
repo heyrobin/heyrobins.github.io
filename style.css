@@ -356,8 +356,10 @@ social_img {
 
 .post-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, 320px);
     gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .post {

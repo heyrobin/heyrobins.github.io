@@ -11,11 +11,12 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+    <link id="theme-style" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -69,8 +70,7 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
-                            <p>I am a Data Analyst who likes to search for unique projects & Ask, Process, Analyze with
-                                my visualization techniques.</p>
+                            <p>I am a Data Analyst who likes to search for unique projects & Ask, Process, Analyze with my visualization techniques.</p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
                         </div>
@@ -85,11 +85,8 @@
             <div class="about-wrapper">
                 <div class="about-me">
                     <h4>More about me</h4>
-                    <p>I recently expanded my skill set to topics including time series analysis and Predictive analysis,
-                        and I am excited to keep learning new methods in a challenging and fast-paced environment.
-
-                        I am a cryptocurrency enthusiast and the blockchain ecosystem. I like to analyze the bitcoin
-                        market movements with advanced technical analysis techniques.</p>
+                    <p>I recently expanded my skill set to topics including time series analysis and Predictive analysis, and I am excited to keep learning new methods in a challenging and fast-paced environment. I am a cryptocurrency enthusiast and the
+                        blockchain ecosystem. I like to analyze the bitcoin market movements with advanced technical analysis techniques.</p>
                     <p>Understanding the Statistics is the core part of any data analysis and then comes the tools.</p>
                     <hr>
                     <h4>SKILLs</h4>
@@ -130,53 +127,137 @@
         </div>
     </section>
 
+
+
     <section class="s1">
+
+
         <div class="main-container">
             <h3 style="text-align: center;">MY PROJECTS</h3>
 
-            <div class="post-wrapper">
 
 
+            <div class="row">
 
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="assets/images/Covid.jpeg">
-                        <div class="post-preview">
-                            <h6 class="post-title">Covid 19 Analysis</h6>
-                            <p class="post-intro">Covid 19 Analysis on Spread, Infection Counts, Vaccinations and Death
-                            </p>
-                            <a href="covid.html">Read More</a>
-                            <img class="icons" src="assets/icons/bi.png" align="right">
-                            <img class="icons" src="assets/icons/EXCEL.png" align="right">
-                            <img class="icons" src="assets/icons/sql.png" align="right">
-                        </div>
-                    </div>
+                <div class="col-lg-12">
+
+
+                    <ul class="filters text-center">
+                        <li class="active" data-filter="*"><a href="#!">All</a></li>
+                        <li data-filter=".python"><a href="#!">PYTHON</a></li>
+                        <li data-filter=".powerbi"><a href="#!">POWERBI</a></li>
+                        <li data-filter=".sql"><a href="#!">SQL</a></li>
+                    </ul>
                 </div>
+            </div>
 
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="assets/images/NYC.jpg">
-                        <div class="post-preview">
-                            <h6 class="post-title">NYC Real State</h6>
-                            <p class="post-intro">Ney York city real state sales dashboard</p>
-                            <a href="NYC.html">Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="projects">
 
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="assets/images/hrdash.PNG">
-                        <div class="post-preview">
-                            <h6 class="post-title">Hr Dashboard</h6>
-                            <p class="post-intro">Hr Dashboard in powerbi</p>
-                            <a href="hrdash.html">Read More</a>
+                <div class="row">
+
+                    <div class="col-lg-4 item powerbi">
+
+                        <div class="card">
+
+                            <div class="card-head">
+                                <img src="assets/images/Covid.jpeg" alt="" class="img-fluid card-img">
+                                <!-- <div class="card-overlay"><h2>Covid 19</h2></div> -->
+                                <div class="card-hover">
+                                    <h2>Covid 19</h2>
+                                    <p>Covid 19 Analysis on Spread, Infection Counts, Vaccinations and Death.</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Covid 19</h4>
+                                <a href="covid.html" class="btn btn-lg card-btn">See More</a>
+                            </div>
+
                         </div>
+
                     </div>
+
+                    <div class="col-lg-4 item powerbi">
+
+                        <div class="card">
+
+                            <div class="card-head">
+                                <img src="assets/images/NYC.jpg" alt="" class="img-fluid card-img">
+                                <!-- <div class="card-overlay"><h2>CSS</h2></div> -->
+                                <div class="card-hover">
+                                    <h2>NYC Sales</h2>
+                                    <p>Ney York City RealEState Sales</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">NYC RealEState</h4>
+                                <a href="nyc.html" class="btn btn-lg card-btn">See More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 item powerbi">
+
+                        <div class="card">
+
+                            <div class="card-head">
+                                <img src="assets/images/hrdash.PNG" alt="" class="img-fluid card-img">
+                                <!-- <div class="card-overlay"><h2>Javascript</h2></div> -->
+                                <div class="card-hover">
+                                    <h2>Hr Dashboard</h2>
+                                    <p>Hr Dashboard in powerbi.</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Hr Dashboard</h4>
+                                <a href="hrdash.html" class="btn btn-lg card-btn">See More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 item powerbi">
+
+                        <div class="card">
+
+                            <div class="card-head">
+                                <img src="assets/images/Titanic.jpg" alt="" class="img-fluid card-img">
+                                <!-- <div class="card-overlay"><h2>Javascript</h2></div> -->
+                                <div class="card-hover">
+                                    <h2>Titanic Survival</h2>
+                                    <p>Titanic Dashboard in powerbi.</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h4 class="title">Titanic</h4>
+                                <a href="titanic.html" class="btn btn-lg card-btn">See More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
+
         </div>
+
+    </section>
+
+
+
+    <section>
+
+
+
+
     </section>
 
 
@@ -203,6 +284,9 @@
         });
     </script>
 
+    <script src="isotope.min.js"></script>
+    <script src="script-blog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </body>
 
