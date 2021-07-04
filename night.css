@@ -10,6 +10,10 @@
     --buttonColor: #17a2b8;
 }
 
+body::-webkit-scrollbar-thumb {
+    background: #17a2b8;
+}
+
 .s1 {
     background: url('assets/images/blue.jpg') no-repeat center;
     background-size: cover;

@@ -10,6 +10,10 @@
     --buttonColor: #8534a3;
 }
 
+body::-webkit-scrollbar-thumb {
+    background: #8534a3;
+}
+
 .s1 {
     background: url('assets/images/Space.jpg') no-repeat center;
     background-size: cover;

@@ -93,6 +93,21 @@ h6 {
 }
 
 
+/* scrollbar animation*/
+
+body::-webkit-scrollbar {
+    width: 0.30rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+
 /* stylng the class */
 
 .s1 {
