@@ -1,53 +1,42 @@
-:root{
-    --maincolor:#15202B;
-    --secondarycolor:#192734;
-
-    --bordercolor:#164D56;
-
-    --maintext:#fff;
-    --secondaryText:#eeeeee;
-
-    --themeDotBorder:#FFF;
-
-    --previewBg:rgb(25, 39, 52, 0.8);
-    --previewShadow:#111921;
-
-    --buttonColor:#17a2b8;
-
-  
+:root {
+    --maincolor: #15202B;
+    --secondarycolor: #192734;
+    --bordercolor: #164D56;
+    --maintext: #fff;
+    --secondaryText: #eeeeee;
+    --themeDotBorder: #FFF;
+    --previewBg: rgb(25, 39, 52, 0.8);
+    --previewShadow: #111921;
+    --buttonColor: #17a2b8;
 }
 
-.s1{
-    background-image: url('assets/images/blue.jpg');
+.s1 {
+    background: url('assets/images/blue.jpg') no-repeat center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    background-attachment: fixed;
 }
 
-.intro-wrapper{
-    background-color: var(--previewBg);
-    
-}
-
-.nav-wrapper{
-    background-color: var(--previewBg);
-    
-}
-
-.s2{
+.intro-wrapper {
     background-color: var(--previewBg);
 }
 
-.post-preview{
-	background-color: #121212; 
-	    
+.nav-wrapper {
+    background-color: var(--previewBg);
 }
 
-.post-title{
-	color:rgb(255, 255, 255);
-    
+.s2 {
+    background-color: var(--previewBg);
 }
 
-.post-intro{
-	color:#b1b1b1;
+.post-preview {
+    background-color: #121212;
+}
+
+.post-title {
+    color: rgb(255, 255, 255);
+}
+
+.post-intro {
+    color: #b1b1b1;
 }

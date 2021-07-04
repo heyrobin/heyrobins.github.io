@@ -1,0 +1,42 @@
+:root {
+    --maincolor: #46344E;
+    --secondarycolor: #382a3f;
+    --bordercolor: #412549;
+    --maintext: #fff;
+    --secondaryText: #eeeeee;
+    --themeDotBorder: #FFF;
+    --previewBg: rgb(29, 21, 32, 0.8);
+    --previewShadow: #2b202f;
+    --buttonColor: #8534a3;
+}
+
+.s1 {
+    background: url('assets/images/Space.jpg') no-repeat center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro-wrapper {
+    background-color: var(--previewBg);
+}
+
+.nav-wrapper {
+    background-color: var(--previewBg);
+}
+
+.s2 {
+    background-color: var(--previewBg);
+}
+
+.post-preview {
+    background-color: #121212;
+}
+
+.post-title {
+    color: rgb(255, 255, 255);
+}
+
+.post-intro {
+    color: #b1b1b1;
+}
