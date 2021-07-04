@@ -344,6 +344,7 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     align-content: center;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
 }
 
 #gif_img {
