@@ -1,141 +1,128 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans:wght@700&family=Poppins:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-
-*{
+html,
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    transition: 0.3s;
+    background-color: #000;
 }
 
-html{
-    font-size: 10px;
-}
-
-body{
-    background-color: #d2bb98;
-    background-position: 0 1000px;
-    /* font-family: 'Abril Fatface', cursive; */
-    font-family : 'Poppins', sans-serif;
-    
-
-}
-
-.covid-title{
-    font-family: 'Abril Fatface', cursive;
-    font-size:13rem;
-    line-height:13rem;
-    text-align: center;
-    
-    
-}
-
-@media screen and (max-width: 800px) {
-    .covid-title{
-        font-size:6rem;
-        line-height:6rem;    
-    }
-    
-}
-
-.covid-dek{
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 3rem;
-
-}
-
-@media screen and (max-width: 800px) {
-    .covid-dek{
-        font-size: 1.3rem;    
-    }
-}
-
-.by{
-    font-family: 'PT Sans', sans-serif;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 6rem;
-}
-.line-4 hr {
-    height: 1px;
-    border: 0;
-    margin: 0 auto;
-    width: 120rem;
-    max-width: 100rem;
-    background: black;
-}
-
-@media only screen and (max-width: 600px) {
-    .line-4 hr {
-    max-width: 40rem;
-    margin: 0 auto;
-        
-    }
-    
-}
-
-.text-container{
-    
-    font-size: 2rem;
-    max-width: 100rem;
-    margin: 0 auto;
-    margin-top:6rem;
-    margin-bottom: 6rem;
-}
-
-.power-bi{
-    margin-top:8rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 6rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .power{
-    max-width: 40rem;
-    max-height: 40rem;
-        
-    }
-    
-}
-
-#img{
+ul.filters {
     display: block;
-    margin: 0 auto;
-    
-    
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters>li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters>li>a {
+    display: block;
+    color: #434e5e;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 10px
+}
+
+ul.filters>li>a:hover {
+    background-color: #f5ffbc;
+}
+
+ul.filters>li.active>a {
+    color: #fff;
+    background-color: #28bea8;
+}
+
+.card {
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 0px solid #eee;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+    border-radius: 10px
+}
+
+.card-head {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67, 78, 94, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-hover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 190, 168, 0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title {
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.card-btn {
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.card-btn:hover {
+    background-color: #28bea8;
+    color: #fff;
+}
+
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
-    border: 2px solid var(--bordercolor);
-}
-
-h2,h3{
-    font-size: 2.5rem;
-    max-width: 100rem;
-    margin: 0 auto;
-    margin-top:6rem;
-    margin-bottom: 6rem;
-}
-
-@media only screen and (max-width: 600px) {
-    #img{
-    max-width: 40rem;
-    max-height: 50rem;
-        
-    }
-    
-}
-
-.footer{
-    background-color: #ecd7b8;
-    height: 3rem;
-    
-}
-
-.footer-bottom{
-    margin-top:6rem;
-    align-content: center;
-    text-align: center;
-    font-size: 1.6rem;
 }

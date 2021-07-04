@@ -1,7 +1,8 @@
 html,body{
     margin: 0;
     padding: 0;
-    background-image: url('assets/images/Space.jpg');
+    transition: 0.3s;
+    background-color: #000;
 }
 
 ul.filters{
@@ -10,6 +11,7 @@ ul.filters{
     margin: 0;
     padding: 30px 0;
     
+    
 
 }
 
@@ -17,14 +19,18 @@ ul.filters > li{
     list-style: none;
     display: inline-block;
     
+    
 }
 
 ul.filters > li > a{
     display: block;
     color: #434e5e;
     text-decoration: none;
+    background-color: #ffffff;
     padding: 5px 20px;
     border-radius: 10px
+    
+    
 }
 
 ul.filters > li > a:hover{
@@ -96,6 +102,7 @@ ul.filters > li.active > a{
     padding-top: 10px;
     padding-bottom: 10px;
     
+    
 }
 
 h4.title{
@@ -119,4 +126,13 @@ h4.title{
 .card-btn:hover{
     background-color: #28bea8;
     color: #fff;
+}
+
+.img-fluid{
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    
+
 }
