@@ -76,6 +76,7 @@ body {
     color: #666666;
     text-align: left;
     background-color: #f1f3ff;
+    /* background-color: var(--secondarycolor)*/
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2423,8 +2424,8 @@ textarea.form-control.is-invalid {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 0;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2451,6 +2452,7 @@ textarea.form-control.is-invalid {
 
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
 }
 
 a.btn.disabled,
