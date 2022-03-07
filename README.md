@@ -15,7 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-UPDATED 29 JUNE 2021
+V1. 29 JUNE 2021
+V2. 3 March 2022
 
 - 🔭 I’m currently working on New Website
 - 📫 Email: 𝑯𝒆𝒚𝑹𝒐𝒃𝒊𝒏𝑺𝒊𝒏𝒈𝒉@𝒈𝒎𝒂𝒊𝒍.𝒄𝒐𝒎
