@@ -407,15 +407,16 @@ hr {
   }
 
   nav ul {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-around;
   }
 
   nav li {
-      margin: 5px 0;
+      margin: 0 5px;
   }
 
   .profile-container {
-      flex-direction: column;
+      flex-direction: row;
   }
 
   .profile-picture img {
@@ -424,16 +425,16 @@ hr {
   }
 
   .profile-text-container {
-      margin: 10px 0;
+      margin: 10px 50;
   }
 
   .filter-container {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
   }
 
   .filter-btn {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       margin: 0 3px;
   }
 
@@ -442,12 +443,13 @@ hr {
   }
 
   .portfolio-item {
-      width: 100%; /* Make portfolio items take full width on small screens */
+      width: 80%; /* Make portfolio items take full width on small screens */
+      height: 80%;
       margin: 10px 0;
   }
 
   .portfolio-item img {
-      opacity: 1; /* Reset opacity on mobile */
+      opacity: 95%; /* Reset opacity on mobile */
       transform: none; /* Reset transform on mobile */
   }
 
