@@ -94,10 +94,7 @@ nav ul li a:hover {
   color: #80d8da; /* Set the desired text color on hover */
 }
 
-li:not(:last-child)::after {
-  content: " | ";
-  color: black; /* Adjust the divider color */
-}
+
 
 
 /* inside main */
@@ -390,4 +387,134 @@ hr {
 .page-topic a{
   color: #2a919e;
   font-size: 19px;
+}
+
+
+
+/* Responsive Styles for Mobile */
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+  }
+
+  header {
+      padding: 5px;
+  }
+
+  header h2 {
+      font-size: 22px; /* Adjust the font size for smaller screens */
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 5px 0;
+  }
+
+  .profile-container {
+      flex-direction: column;
+  }
+
+  .profile-picture img {
+      width: 100%; /* Make the profile picture take the full width */
+      height: auto; /* Maintain aspect ratio */
+  }
+
+  .profile-text-container {
+      margin: 10px 0;
+  }
+
+  .filter-container {
+      margin-bottom: 10px;
+  }
+
+  .filter-btn {
+      width: 50px;
+      height: 50px;
+      margin: 0 3px;
+  }
+
+  .portfolio-container {
+      margin: 0;
+  }
+
+  .portfolio-item {
+      width: 100%; /* Make portfolio items take full width on small screens */
+      margin: 10px 0;
+  }
+
+  .portfolio-item img {
+      opacity: 1; /* Reset opacity on mobile */
+      transform: none; /* Reset transform on mobile */
+  }
+
+  .project-details {
+      opacity: 1; /* Reset opacity on mobile */
+  }
+
+  footer {
+      padding: 5px;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .card-container {
+      flex-direction: column;
+  }
+
+  .card {
+      width: 100%; /* Make cards take full width on small screens */
+  }
+
+  .section-container {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .section {
+      width: 100%; /* Make sections take full width on small screens */
+      margin: 10px 0;
+  }
+
+  .page-topic h1 {
+      font-size: 24px;
+  }
+
+  .page-topic p {
+      font-size: 16px;
+  }
+
+  hr {
+      width: 100%;
+  }
+
+  .main-parent {
+      top: 0;
+      left: 0;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+      position: relative;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+  }
+
+  .button {
+      width: 100%; /* Make buttons take full width on small screens */
+  }
+
+  .resume-cont {
+      flex-direction: column;
+  }
+
+  .page-topic a {
+      font-size: 16px;
+  }
 }
