@@ -10,6 +10,7 @@ a {
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
   
 }
 
@@ -37,7 +38,7 @@ footer{
 header {
   background-color: #f3f3f3;
   color: #000000;
-  padding: 10px ;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,20 +56,25 @@ p{
 }
 
 .logo {
-  display: inline-flexbox;
-  
+  text-align: center; /* Center the image horizontally */
+  margin-top: 10px; /* Add some top margin for spacing */
 }
 
-.hover-animation {
-  transition: color 0.3s ease-in-out;
+.logo-image {
+  width: 110px; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+ 
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
-.hover-animation:hover {
-  color: #80d8da; /* Change this to the color you want on hover */
+/* Add hover effect on the logo image */
+.logo-image:hover {
+  transform: scale(1.1); /* Increase the size on hover */
 }
 
 nav {
   margin-left: auto;
+  font-size: 14px;
 }
 
 nav ul {
@@ -275,18 +281,21 @@ main{
 
 
 .page-topic{
+  
+ 
   text-align: center;
-  padding: 2%;
 
 }
 
 .page-topic h1 {
-  font-size: 3.375rem; /* 54px converted to rem */
+  font-size: 40px; /* 54px converted to rem */
+  font-style: italic;
+  
 }
 
 .page-topic p {
   font-size: 1.125rem; /* 18px converted to rem */
-  font-weight: bold;
+  
 }
 
 hr {
@@ -519,4 +528,93 @@ hr {
   .page-topic a {
       font-size: 16px;
   }
+}
+
+
+
+
+
+/* Text selction*/
+
+::selection {
+  background-color: #fff200;
+  color: black;
+  height: 2000px;
+}
+
+::-moz-selection {
+  background-color: #fff200;
+  color: black;
+}
+
+
+/* Project page n*/
+.project-topic{
+  
+  margin-left: 25px;
+
+}
+
+.project-topic h1 {
+  font-size: 40px;
+}
+
+.project-topic p {
+  font-size: 16px;
+}
+
+
+/* Filters*/
+
+
+.PageFilter{
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  
+  max-width: 100px;
+  background-color: #eea302;
+  color: black;
+  text-align: center;
+  margin-right: 3px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+
+.PageFilter:nth-child(2) {
+  background-color: lightgrey; /* Tomato */
+}
+
+.PageFilter:hover{
+  background-color: white;
+}
+
+
+
+.page-filter:nth-child(2):hover{
+  background-color: white;
+}
+
+.top{
+  display: flex;
+}
+
+.technology{
+  display: flex;
+  font-size: 14px;
+}
+
+.technologyname {
+  
+  padding-left: 6px;
+  padding-right: 6px;
+  
+  max-width: 100px;
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+  margin-right: 3px;
+  transition: background-color 0.3s;
+  font-size: 14px;
 }

@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  
+  
+}
+
+main{
+  background-color: #f3f3f3;
+  border-bottom: 0.5px solid lightgrey; /* Set the color you want for the "margin" */
+  min-height: 100vh; /* Set a minimum height to cover the viewport height */
+}
+
+footer{
+  background-color: #f3f3f3;
+  padding: 10px 60px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif;
+  
+  
+}
+
+header {
+  background-color: #f3f3f3;
+  color: #000000;
+  padding: 10px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Work Sans', sans-serif; /* Specify the font family */
+}
+
+header h2 {
+  font-size: 26px; /* Set the font size for the header text */
+  font-weight: 600; /* Set the font weight to semi-bold */
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.logo {
+  display: inline-flexbox;
+  
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Change the color on hover */
+nav ul li a:hover {
+  color: #80d8da; /* Set the desired text color on hover */
+}
+
+li:not(:last-child)::after {
+  content: " | ";
+  color: black; /* Adjust the divider color */
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 100px;
+}
+
+.section {
+  flex: 0 0 48%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  background-color: #f3f3f3;
+}
+
+
+.main-parent {
+  position: relative;
+
+}
+.image1 {
+  position: relative;
+  max-width: 40%;
+  border: 6px solid #f9f9f9;
+  outline: 3px solid black;
+
+}
+.image2 {
+
+  position: relative;
+  top: -40px;
+  left: 200px;
+  border: 6px solid #f9f9f9;
+  outline: 3px solid black;
+  max-width: 60%;
+}
+
+.image3 {
+
+  position: relative;
+  top: 40px;
+  left: -30px;
+  border: 6px solid #f9f9f9;
+  outline: 3px solid black;
+  max-width: 40%;
+}
+
+.image4 {
+
+  position: relative;
+  top: 40px;
+  left: -30px;
+  border: 6px solid #f9f9f9;
+  outline: 3px solid black;
+  max-width: 40%;
+}
+
+/*page title*/
+.page-topic{
+  text-align: center;
+  padding: 2%;
+
+}
+
+.page-topic h1 {
+  font-size: 3.375rem; /* 54px converted to rem */
+}
+
+.page-topic p {
+  font-size: 1.125rem; /* 18px converted to rem */
+  font-weight: bold;
+}
+
+hr {
+  width: 93%;
+  opacity: 0.4; /* 40% as a decimal */
+}
+
+.button {
+  background-color: #bada55;
+  border-color: black;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;  
+  border-style: solid;
+  padding: 3px 9px;
+  border-width: 1px;  
+  transition: 0.3s;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;  /* Hover background color */
+  color: #3498db; /* Hover text color */
+  border-color: black; /* Hover border color */
+}
+
+
+.download p{
+  color: #2a919e;
+  font-size: 19px;
+}
+
+.resume-cont {
+  display: flex;
+  
+  margin: 0;
+}
+
+.left {
+  font-size: 26px;
+  background-color: red;
+  flex: 0 0 50%; /* Adjusted the width */
+}
+
+.middle {
+  background-color: blue;
+  flex: 0 0 25%; /* Adjusted the width */
+  font-size: 14px;
+}
+
+.right {
+  background-color: green;
+  flex: 0 0 25%; /* Adjusted the width */
+  font-size: 18px;
+}
+
+.box {
+  /* Removed fixed width and height */
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+ 
+}
