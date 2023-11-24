@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Robin Singh - Data Enthusiast</title>
+    <link rel="stylesheet" href="Scripts/hf.css">
+    <link rel="stylesheet" href="Scripts/profile.css">
+    <link rel="stylesheet" href="Scripts/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <script src="Scripts/script.js" defer></script>
+    <title>Robin Singh | Data Enthusiast</title>
 </head>
 
 <body>
@@ -19,27 +21,51 @@
                 <img src="Images/Logo.png" alt="Logo" class="logo-image">
             </a>
         </div>
+
+        
         <nav>
             <ul>
                 <li><a href="Resume.html">RESUME</a></li>
-                <li><a href="Projects.html">PROJECTS</a></li>
+                <li class="dropdown">
+                    <a href="projects.html" class="dropbtn">PROJECTS</a>
+                    <div class="dropdown-content">
+                        <a href="#">Analysis</a>
+                        <a href="#">Engineering</a>
+                        <!-- Add more project links as needed -->
+                    </div>
+                </li>
                 <li><a href="Outreach.html">OUTREACH</a></li>
                 <li><a href="Personal.html">PERSONAL</a></li>
             </ul>
         </nav>
     </header>
 
+
+
+    
+
+
+
+
+
+
+
     <main>
+
         <div class="profile-container">
             <div class="profile-picture">
                 <img src="/Images/profile-picture.jpg" alt="Profile Picture">
             </div>
             <div class="profile-text-container">
-                <div>
-                    <h1>Robin Singh</h1>
-                    <b><p>Data Analyst</p></b>
-                    <p>Data analyst with expertise in statistical analysis, data visualization, and extracting actionable insights from complex datasets. Proficient in programming languages and skilled in translating data into strategic business solutions.</p>
-                </div>
+                
+                    <h1 class="job-name">Robin Singh</h1>
+                    <strong><p class="job-title">Data Analyst</p></strong>
+                    <p class="job-details">Data analyst with expertise in statistical analysis, 
+                        data visualization, and extracting actionable insights 
+                        from complex datasets. Proficient in programming languages 
+                        and skilled in translating data into strategic business 
+                        solutions.</p>
+                
             </div>
         </div>
 
@@ -50,9 +76,10 @@
             <button class="filter-btn" onclick="filterSelection('sql')">SQL</button>
         </div>
 
+
         <div class="portfolio-container">
             <div class="portfolio-item" data-tech="all">
-                <a href="Page.html">
+                <a href="Script/Page.html">
                     <img src="/Images/Projects/project1.png" alt="Project 1">
                 </a>
                 <div class="project-details">
@@ -91,25 +118,41 @@
                 </div>
             </div>
         </div>
+
+
+
     </main>
 
-    <footer>
-        <p>
-            <strong>Email</strong>
-            <br>
-            <a href="mailto:heyrobinsingh@gmail.com" target="_blank">heyrobin@gmail.com</a>
-        </p>
-        <p>
-            <strong>GitHub</strong>
-            <br>
-            <a href="https://github.com/heyrobin" target="_blank">github.com/heyrobin</a>
-        </p>
-        <p>
-            <strong>Kaggle</strong>
-            <br>
-            <a href="https://www.kaggle.com/heyrobin" target="_blank">kaggle.com/heyrobin</a>
-        </p>
-        <p class="copyright">© 2023 by Robin Singh.</p>
+    
+
+   
+    <footer >
+        <div class="f2">
+            <div class="contact-info">
+                <p>
+                    <strong>Email</strong><br>
+                    <a href="mailto:heyrobinsingh@gmail.com" target="_blank">heyrobin@gmail.com</a>
+                </p>
+                <p>
+                    <strong>GitHub</strong><br>
+                    <a href="https://github.com/heyrobin" target="_blank">github.com/heyrobin</a>
+                </p>
+                <p>
+                    <strong>Kaggle</strong><br>
+                    <a href="https://www.kaggle.com/heyrobin" target="_blank">kaggle.com/heyrobin</a>
+                </p>
+                <p>
+                    <strong>LinkedIn</strong><br>
+                    <a href="https://www.LinkedIn.com/in/heyrobin" target="_blank">linkedin.com/heyrobin</a>
+                </p>
+            </div>
+        </div>
+    
+        <div class="line"></div>
+    
+        <div class="copyright">
+            <p>© 2023 Robin Singh. All Rights Reserved</p>
+        </div>
     </footer>
 
 </body>

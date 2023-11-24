@@ -1,0 +1,298 @@
+
+
+
+main {
+    background-color: #f3f3f3;
+    min-height: 700px;
+}
+
+
+/* LOGO */
+.logo {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo-image {
+    width: 110px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+/* Text selction*/
+::selection {
+    background-color: #fff200;
+    color: black;
+    height: 2000px;
+  }
+
+::-moz-selection {
+    background-color: #fff200;
+    color: black;
+}
+
+/* NAV */
+nav {
+    margin-left: auto;
+    font-size: 14px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #636969;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+}
+
+/* Change the color on hover */
+nav ul li a:hover {
+    color: #80d8da;
+    /* Set the desired text color on hover */
+}
+
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* HEADER */
+header {
+    background-color: #f3f3f3;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Allow header items to wrap on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+header h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* Topic Header */
+.page-topic{
+    text-align: center;
+}
+
+.page-topic h1 {
+  font-size: 40px; /* 54px converted to rem */
+  font-style: italic;
+  font-family: 'Oswald', sans-serif;
+}
+
+.page-topic p {
+  font-size: 1.125rem; /* 18px converted to rem */
+}
+
+.page-topic a{
+  color: #2a919e;
+  font-size: 19px;
+}
+
+
+/* footer */
+footer {
+    background-color: #e9e7e8;
+    
+    color: #4F7177;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 16px;
+    border-top: 6px solid #fff200;
+    
+    
+}
+
+.footer a {
+    color: #4F7177;
+    text-decoration: none;
+    margin-right: 10px;
+    
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.line {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.copyright {
+    text-align: right;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+     
+    
+}
+
+.copyright p{
+    font-size: 10px;
+    
+    
+}
+
+
+/* Add this CSS for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #636969;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: #80d8da;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the main navigation links */
+nav a.dropbtn {
+    text-decoration: none;
+    color: #636969;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a.dropbtn:hover {
+    color: #80d8da;
+}
+
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens here */
+
+    .logo {
+        margin-bottom: 10px; /* Add bottom margin for the logo */
+    }
+
+    .logo-image {
+        width: 90px;
+        height: auto;
+    }
+
+    .footer {
+        justify-content: center;
+        
+    }
+
+    .f2 {
+        justify-content: center;
+    }
+
+    .f2 p {
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 5px; /* Add bottom margin between each contact info pair */
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav{
+        font-size: 12px;
+    }   
+
+
+    .page-topic h1 {
+        font-size: 24px;
+    }
+
+    .page-topic p {
+        font-size: 16px;
+        margin: 20px 20px;
+    }
+
+    .page-topic a {
+        font-size: 16px;
+    }
+  
+}
+
+
+
+
+
+
+    
+

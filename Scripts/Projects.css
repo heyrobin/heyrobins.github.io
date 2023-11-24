@@ -1,0 +1,39 @@
+
+
+
+  /* projects */
+
+.button {
+    background-color: #bada55;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;  
+    border-style: solid;
+    padding: 3px 9px;
+    border-width: 1px;  
+    transition: 0.3s;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: white;  /* Hover background color */
+    color: #3498db; /* Hover text color */
+    border-color: black; /* Hover border color */
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    
+
+
+    .button {
+        width: 100%; /* Make buttons take full width on small screens */
+    }
+  
+  
+  }
