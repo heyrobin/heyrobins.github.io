@@ -36,17 +36,6 @@
     color: #4c4e4d;
 }
 
-.iico {
-    width: 40px;
-    height: 40px;
-    
-}
-
-.dico {
-padding-left: 0%;
-    
-}
-
 
 
 @media only screen and (max-width: 600px) {
@@ -74,12 +63,5 @@ padding-left: 0%;
     .job-details {
         font-size: 11px;
     }
-
-
-        .iico {
-            width: 25px;
-            height: auto;
-            
-        }
 
   }
