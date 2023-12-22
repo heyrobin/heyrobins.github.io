@@ -1,39 +1,131 @@
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
 
+}
 
+.hrs {
+  width: 50%;
+}
 
-  /* projects */
-
-.button {
-    background-color: #bada55;
-    border-color: black;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;  
-    border-style: solid;
-    padding: 3px 9px;
-    border-width: 1px;  
-    transition: 0.3s;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-  }
+.center-container ul{
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
   
-  .button:hover {
-    background-color: white;  /* Hover background color */
-    color: #3498db; /* Hover text color */
-    border-color: black; /* Hover border color */
+}
+
+.center-container li{
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.center-container a{
+  text-decoration: none;
+  color: #333;
+  display: inline-block; /* Ensure consistent box model for the link */
+  padding: 0px 17px;
+  transition: background-color 0.3s; /* Add a smooth transition effect for background color */
+}
+
+.center-container a:hover{
+  background-color: yellow;
+}
+
+
+
+
+
+.post-container {
+  display: flex;
+  border-top: 1px solid rgba(128, 128, 128, 0.6);
+  width: 50%;
+  margin: 20px auto;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+
+.post img {
+  width: 250px;
+  height: 141px;
+  margin-right: 20px;
+}
+
+.post-content {
+  flex: 1;
+  padding-top: 14px;
+}
+
+.post-title {
+  
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: #4c4e4d;
+
+}
+
+.post-by{
+  display: flex;
+  gap: 3px;
+
+}
+
+.post-by p{
+  color: #666;
+  font-family: 'Hedvig Letters Serif', serif;  
+  font-style: italic;
+  
+}
+
+/* Media query for phone screens */
+@media only screen and (max-width: 600px) {
+  .post img {
+    width: 138px; /* Make the image fill the entire width of the container on smaller screens */
+    height: 92px; /* Maintain the aspect ratio of the image */
+    margin-right: 10px; /* Remove right margin on smaller screens */
   }
 
+  .center-container ul{
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
 
-
-
-  @media only screen and (max-width: 600px) {
+  .post-content {
+    padding-top: 0; /* Remove top padding on smaller screens */
     
-
-
-    .button {
-        width: 100%; /* Make buttons take full width on small screens */
-    }
-  
-  
   }
+
+  .post-title {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .post-container {
+    padding: 10px;
+    
+    flex-direction: column; /* Stack the post containers vertically on smaller screens */
+    width: 100%; /* Make the post container full width on smaller screens */
+  }
+
+  .post-by {  
+    font-size: 10px;
+  }
+  .hrs {
+    width: 100%;
+  }
+}
+
+
