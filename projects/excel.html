@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="stylesheet" href="Styles/header.css">
-    <link rel="stylesheet" href="Styles/footer.css">
-    <link rel="stylesheet" href="Styles/outreach.css">
+    <link rel="stylesheet" href="/Styles/header.css">
+    <link rel="stylesheet" href="/Styles/footer.css">
+    <link rel="stylesheet" href="/Styles/pages.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>Robin Singh | Resume</title>
+    <title>Robin Singh | Data Analyst</title>
     <!-- Include jQuery (you can download it or use a CDN) -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
@@ -22,12 +23,11 @@
             });
 
             // Load the profile
-            var profilePromise = $.get('/elements/outreach element.html', function(data) {
+            var profilePromise = $.get('/elements/excel element.html', function(data) {
                 $('body').append(data);
             });
 
-
-            // Load the footer
+                    // Load the footer
             var footerPromise = $.get('/elements/footer.html', function(data) {
                 $('body').append(data);
             });

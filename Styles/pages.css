@@ -1,0 +1,77 @@
+.centerpage{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+
+
+.article-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #4C4E4D;
+}
+
+.info{
+  padding: 10px 0;
+}
+
+.info p{
+  font-size: 16px;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+}
+
+.info hr{
+  width: 100%;
+  opacity: 40%;
+}
+
+.embed{
+  margin-left: 10%;
+  margin-right: 13.5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid #000;
+  
+  
+}
+
+
+.embed-container {
+  position: relative;
+  overflow: hidden;
+  width: 80%; /* Adjust the width as needed */
+  margin: 5% 10%; /* 10% space on all sides, and center the container */
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  border: 2px solid #000;
+  
+}
+
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+/* Add your existing styles below this line */
+@media screen and (max-width: 600px) {
+  .article-info p {
+      font-size: 11px;
+  }
+
+  .centerpage{
+  
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  .embed-container {
+    border: 1px solid #000;
+  }
+
+}

@@ -1,119 +1,42 @@
+<!-- main_page.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Scripts/hf.css">
-    <link rel="stylesheet" href="Scripts/normal-pages.css">
+    
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/outreach.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
-    <title>Robin Singh | Data Enthusiast</title>
+    <title>Robin Singh | Resume</title>
+    <!-- Include jQuery (you can download it or use a CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
-
 <body>
+    <!-- Script to dynamically load header, profile, and footer -->
+    <script>
+        $(function() {
+            // Load the header
+            var headerPromise = $.get('/elements/header.html', function(data) {
+                $('body').prepend(data);
+            });
 
-    <header>
-        
-        <div class="logo">
-            <a href="index.html">
-                <img src="Images/Logo.png" alt="Logo" class="logo-image">
-            </a>
-        </div>
-
-        
-        <nav>
-            <ul>
-                <li><a href="Resume.html">RESUME</a></li>
-                <li class="dropdown">
-                    <a href="Projects.html" class="dropbtn">PROJECTS</a>
-                    <div class="dropdown-content">
-                        <a href="#">Analysis</a>
-                        <a href="#">Engineering</a>
-                        <!-- Add more project links as needed -->
-                    </div>
-                </li>
-                <li><a href="Outreach.html">OUTREACH</a></li>
-                <li><a href="Personal.html">PERSONAL</a></li>
-            </ul>
-        </nav>
-    </header>
+            // Load the profile
+            var profilePromise = $.get('/elements/personal element.html', function(data) {
+                $('body').append(data);
+            });
 
 
+            // Load the footer
+            var footerPromise = $.get('/elements/footer.html', function(data) {
+                $('body').append(data);
+            });
 
-    
-
-
-
-
-
-
-
-    <main>
-
-        <div class="page-topic">
-            <h1>PERSONAL</h1>
-            <p>What occupies my time when I'm not engaged in analysis?</p>
-        </div>
-
-        <hr>
-
-
-
-        <div class="section-container">
-            <div class="section">
-                <h2>Something About Me <br></h2>
-                <p>
-                    Hello, my name is Robin Singh. I hold a graduate degree in commerce and possess over five years of valuable experience in the data domain. Currently, I am employed as a data analyst, where I leverage my skills and expertise to derive meaningful insights from data sets. 
-                    <br><br>I am adept at utilizing various analytical tools and techniques to enhance decision-making processes. My educational background, coupled with my extensive professional experience, has equipped me with a robust foundation in data analysis. I am enthusiastic about contributing my analytical skills to further the success of any data-driven initiatives.
-                    </b>
-                   </p>
-            </div>
-        
-            <div class="section">
-                <div class="mid">
-                    <div class="main-parent">
-                        <img class="image1" src="/Images/profile-picture.jpg" />
-                        <img class="image2" src="/Images/mountains.jpg" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    
-
-   
-    <footer >
-        <div class="f2">
-            <div class="contact-info">
-                <p>
-                    <strong>Email</strong><br>
-                    <a href="mailto:heyrobinsingh@gmail.com" target="_blank">heyrobin@gmail.com</a>
-                </p>
-                <p>
-                    <strong>GitHub</strong><br>
-                    <a href="https://github.com/heyrobin" target="_blank">github.com/heyrobin</a>
-                </p>
-                <p>
-                    <strong>Kaggle</strong><br>
-                    <a href="https://www.kaggle.com/heyrobin" target="_blank">kaggle.com/heyrobin</a>
-                </p>
-                <p>
-                    <strong>LinkedIn</strong><br>
-                    <a href="https://www.LinkedIn.com/in/heyrobin" target="_blank">linkedin.com/heyrobin</a>
-                </p>
-            </div>
-        </div>
-    
-        <div class="line"></div>
-    
-        <div class="copyright">
-            <p>© 2023 Robin Singh. All Rights Reserved</p>
-        </div>
-    </footer>
-
+            // Ensure loading order
+            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+                // All content loaded, do any additional setup if needed
+            });
+        });
+    </script>
 </body>
-
 </html>

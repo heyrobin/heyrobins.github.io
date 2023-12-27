@@ -1,160 +1,49 @@
+<!-- main_page.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Scripts/hf.css">
-    <link rel="stylesheet" href="Scripts/profile.css">
-    <link rel="stylesheet" href="Scripts/portfolio.css">
+    
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/profile.css">
+    <link rel="stylesheet" href="Styles/filter.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <script src="Scripts/script.js" defer></script>
-    <title>Robin Singh | Data Enthusiast</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet"> 
+
+    <title>Robin Singh | Data Analyst</title>
+    <!-- Include jQuery (you can download it or use a CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
-
 <body>
+    <!-- Script to dynamically load header, profile, and footer -->
+    <script>
+        $(function() {
+            // Load the header
+            var headerPromise = $.get('/elements/header.html', function(data) {
+                $('body').prepend(data);
+            });
 
-    <header>
-        
-        <div class="logo">
-            <a href="index.html">
-                <img src="Images/Logo.png" alt="Logo" class="logo-image">
-            </a>
-        </div>
+            // Load the profile
+            var profilePromise = $.get('/elements/profile.html', function(data) {
+                $('body').append(data);
+            });
 
-        
-        <nav>
-            <ul>
-                <li><a href="Resume.html">RESUME</a></li>
-                <li class="dropdown">
-                    <a href="Projects.html" class="dropbtn">PROJECTS</a>
-                    <div class="dropdown-content">
-                        <a href="#">Analysis</a>
-                        <a href="#">Engineering</a>
-                        <!-- Add more project links as needed -->
-                    </div>
-                </li>
-                <li><a href="Outreach.html">OUTREACH</a></li>
-                <li><a href="Personal.html">PERSONAL</a></li>
-            </ul>
-        </nav>
-    </header>
+            var profilePromise = $.get('/elements/filter.html', function(data) {
+                $('body').append(data);
+            });
 
+            // Load the footer
+            var footerPromise = $.get('/elements/footer.html', function(data) {
+                $('body').append(data);
+            });
 
-
-    
-
-
-
-
-
-
-
-    <main>
-
-        <div class="profile-container">
-            <div class="profile-picture">
-                <img src="/Images/profile-picture.jpg" alt="Profile Picture">
-            </div>
-            <div class="profile-text-container">
-                
-                    <h1 class="job-name">Robin Singh</h1>
-                    <strong><p class="job-title">Data Analyst</p></strong>
-                    <p class="job-details">Data analyst with expertise in statistical analysis, 
-                        data visualization, and extracting actionable insights 
-                        from complex datasets. Proficient in programming languages 
-                        and skilled in translating data into strategic business 
-                        solutions.</p>
-                
-            </div>
-        </div>
-
-        <div class="filter-container">
-            <button class="filter-btn" onclick="filterSelection('all')">All</button>
-            <button class="filter-btn" onclick="filterSelection('powerbi')">PBI</button>
-            <button class="filter-btn" onclick="filterSelection('python')">Python</button>
-            <button class="filter-btn" onclick="filterSelection('sql')">SQL</button>
-        </div>
-
-
-        <div class="portfolio-container">
-            <div class="portfolio-item" data-tech="all">
-                <a href="Script/Page.html">
-                    <img src="/Images/Projects/project1.png" alt="Project 1">
-                </a>
-                <div class="project-details">
-                    <p><b>Youtube<br> Data Analysis</b></p>
-                    <p>Analysis of YouTube data</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-tech="powerbi">
-                <a href="Because_working_on_this">
-                    <img src="/Images/Projects/project1.png" alt="Project 2">
-                </a>
-                <div class="project-details">
-                    <p><b>Youtube<br> Data Analysis</b></p>
-                    <p>Analysis of YouTube data</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-tech="python">
-                <a href="Because_working_on_this">
-                    <img src="/Images/Projects/project1.png" alt="Project 3">
-                </a>
-                <div class="project-details">
-                    <p><b>Youtube<br> Data Analysis</b></p>
-                    <p>Analysis of YouTube data</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item" data-tech="sql">
-                <a href="Because_working_on_this">
-                    <img src="/Images/Projects/project1.png" alt="Project 4">
-                </a>
-                <div class="project-details">
-                    <p><b>Youtube<br> Data Analysis</b></p>
-                    <p>Analysis of YouTube data</p>
-                </div>
-            </div>
-        </div>
-
-
-
-    </main>
-
-    
-
-   
-    <footer >
-        <div class="f2">
-            <div class="contact-info">
-                <p>
-                    <strong>Email</strong><br>
-                    <a href="mailto:heyrobinsingh@gmail.com" target="_blank">heyrobin@gmail.com</a>
-                </p>
-                <p>
-                    <strong>GitHub</strong><br>
-                    <a href="https://github.com/heyrobin" target="_blank">github.com/heyrobin</a>
-                </p>
-                <p>
-                    <strong>Kaggle</strong><br>
-                    <a href="https://www.kaggle.com/heyrobin" target="_blank">kaggle.com/heyrobin</a>
-                </p>
-                <p>
-                    <strong>LinkedIn</strong><br>
-                    <a href="https://www.LinkedIn.com/in/heyrobin" target="_blank">linkedin.com/heyrobin</a>
-                </p>
-            </div>
-        </div>
-    
-        <div class="line"></div>
-    
-        <div class="copyright">
-            <p>© 2023 Robin Singh. All Rights Reserved</p>
-        </div>
-    </footer>
-
+            // Ensure loading order
+            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+                // All content loaded, do any additional setup if needed
+            });
+        });
+    </script>
 </body>
-
 </html>
