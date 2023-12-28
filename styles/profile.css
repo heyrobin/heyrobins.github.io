@@ -1,0 +1,84 @@
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    background-color: #f3f3f3; 
+}
+
+
+.profile-picture img {
+    border-radius: 60%;
+    width: 300px;
+    height: auto;
+}
+
+.profile-text-container {
+    margin-left: 20px; /* Adjust the margin as needed */
+    max-width: 400px; /* Add a max-width to prevent the text from stretching too wide */
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.job-name{
+    margin-bottom: -10px;
+    color: #4c4e4d;
+}
+
+.job-title{
+    margin-bottom: -10px;
+    color: #4c4e4d;
+
+}
+
+.job-details{
+    color: #4c4e4d;
+}
+
+.iico {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.dico {
+padding-left: 0%;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .profile-container {
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .profile-picture img {
+        width: 100%; /* Make the profile picture take the full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .job-name {
+        font-size: 30px;
+        margin-bottom: -18px;
+    }
+
+    .job-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .job-details {
+        font-size: 11px;
+    }
+
+
+        .iico {
+            width: 25px;
+            height: auto;
+            
+        }
+
+  }

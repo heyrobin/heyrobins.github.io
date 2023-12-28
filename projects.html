@@ -1,0 +1,43 @@
+<!-- main_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/outreach.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <title>Robin Singh | Resume</title>
+    <!-- Include jQuery (you can download it or use a CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <!-- Script to dynamically load header, profile, and footer -->
+    <script>
+        $(function() {
+            // Load the header
+            var headerPromise = $.get('/elements/header.html', function(data) {
+                $('body').prepend(data);
+            });
+
+            // Load the profile
+            var profilePromise = $.get('/elements/projects elements.html', function(data) {
+                $('body').append(data);
+            });
+
+
+            // Load the footer
+            var footerPromise = $.get('/elements/footer.html', function(data) {
+                $('body').append(data);
+            });
+
+            // Ensure loading order
+            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+                // All content loaded, do any additional setup if needed
+            });
+        });
+    </script>
+</body>
+</html>
