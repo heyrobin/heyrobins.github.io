@@ -17,26 +17,36 @@
     <script>
         $(function() {
             // Load the header
-            var headerPromise = $.get('/elements/header.html', function(data) {
+            var headerPromise = $.ajax({
+                url: '/elements/header.html',
+                method: 'GET'
+            }).then(function(data) {
                 $('body').prepend(data);
             });
-
+    
             // Load the profile
-            var profilePromise = $.get('/elements/outreach element.html', function(data) {
+            var elementPromise = $.ajax({
+                url: '/elements/outreach%20element.html',
+                method: 'GET'
+            }).then(function(data) {
                 $('body').append(data);
             });
-
-
+    
             // Load the footer
-            var footerPromise = $.get('/elements/footer.html', function(data) {
+            var footerPromise = $.ajax({
+                url: '/elements/footer.html',
+                method: 'GET'
+            }).then(function(data) {
                 $('body').append(data);
             });
-
+    
             // Ensure loading order
-            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+            $.when(headerPromise, elementPromise, footerPromise).then(function() {
                 // All content loaded, do any additional setup if needed
             });
         });
     </script>
+    
+    
 </body>
 </html>
