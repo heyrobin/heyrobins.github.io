@@ -30,7 +30,7 @@
                 $('body').append(data);
             });
 
-            var profilePromise = $.get('/elements/filter.html', function(data) {
+            var filterPromise = $.get('/elements/filter.html', function(data) {
                 $('body').append(data);
             });
 
@@ -40,7 +40,7 @@
             });
 
             // Ensure loading order
-            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+            $.when(headerPromise, profilePromise,filterPromise, footerPromise).done(function() {
                 // All content loaded, do any additional setup if needed
             });
         });
