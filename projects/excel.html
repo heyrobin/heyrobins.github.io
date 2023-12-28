@@ -18,25 +18,26 @@
     <script>
         $(function() {
             // Load the header
-            var headerPromise = $.get('/elements/header.html', function(data) {
+            var headerPromise = $.get('/elements/header.html').then(function(data) {
                 $('body').prepend(data);
             });
-
+    
             // Load the profile
-            var profilePromise = $.get('/elements/excel element.html', function(data) {
+            var profilePromise = $.get('/elements/excel%20element.html').then(function(data) {
                 $('body').append(data);
             });
-
-                    // Load the footer
-            var footerPromise = $.get('/elements/footer.html', function(data) {
+    
+            // Load the footer
+            var footerPromise = $.get('/elements/footer.html').then(function(data) {
                 $('body').append(data);
             });
-
+    
             // Ensure loading order
-            $.when(headerPromise, profilePromise, footerPromise).done(function() {
+            $.when(headerPromise, profilePromise, footerPromise).then(function() {
                 // All content loaded, do any additional setup if needed
             });
         });
     </script>
+    
 </body>
 </html>
